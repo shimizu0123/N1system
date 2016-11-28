@@ -2,7 +2,7 @@ package casestudy;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-public class Testinsert {
+public class DB_Insert {
 	public static void callsigninsert(DB_Item_CallSign callsign) {
 		Connection   con = null;
 
