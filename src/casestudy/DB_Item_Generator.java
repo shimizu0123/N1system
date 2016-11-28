@@ -12,7 +12,7 @@ public class DB_Item_Generator {
 	 */
 	public static void dB_Item_CallSign_Generate(String modeS, String callSign){
 		DB_Item_CallSign db_Item_CallSign = new DB_Item_CallSign(modeS, callSign);
-		//Testinsert.callsigninsert(db_Item_CallSign);//DBにCallsignを格納
+		Testinsert.callsigninsert(db_Item_CallSign);//DBにCallsignを格納
 		System.out.println(db_Item_CallSign.toString());
 
 	}
