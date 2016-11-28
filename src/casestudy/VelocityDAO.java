@@ -19,7 +19,7 @@ public class VelocityDAO {
 	 * DBにデータを格納する
 	 * @param velocity DB_Item_Velocityオブジェクト
 	 */
-	public void insertvelocity(DB_Item_Velocity velocity) throws SQLException{
+	public void insertVelocity(DB_Item_Velocity velocity) throws SQLException{
 
 		String sql = 	"INSERT INTO velocity(modes, H_velocity, V_velocity, H_direction, V_direction, timestamp)"
 						+ "VALUES(?,?,?,?,?,systimestamp)";

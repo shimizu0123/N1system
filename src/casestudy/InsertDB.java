@@ -11,7 +11,7 @@ public class InsertDB {
 	 * DBにDB_Item_CallSignを格納する
 	 * @param DB_Item_CallSign
 	 */
-	public static void InsertCallSign(DB_Item_CallSign callsign) {
+	public static void InsertCallSign(DB_Item_CallSign callSign) {
 
 		Connection con = null;
 
@@ -21,10 +21,10 @@ public class InsertDB {
 			System.out.println("DB接続完了");
 
 			CallSignDAO InsCallsign =new CallSignDAO(con);
-			InsCallsign.insertCallSign(callsign);
+			InsCallsign.insertCallSign(callSign);
 
 			System.out.println("*** 以下の内容を登録しました ***");
-			System.out.println(callsign.getModeSAddress() + ", " + callsign.getCallSign());
+			System.out.println(callSign.getModeSAddress() + ", " + callSign.getCallSign());
 
 		}catch (SQLException e) {
 			System.out.println("登録に失敗しました");
@@ -58,7 +58,7 @@ public class InsertDB {
 			System.out.println("DB接続完了");
 
 			VelocityDAO InsVelocity =new VelocityDAO(con);
-			InsVelocity.insertvelocity(velocity);
+			InsVelocity.insertVelocity(velocity);
 
 			System.out.println("*** 以下の内容を登録しました ***");
 			System.out.println(	velocity.getModeSAddress() + ", "
@@ -87,7 +87,7 @@ public class InsertDB {
 	 * DBにDB_Item_PlanePositionを格納する
 	 * @param DB_Item_PlanePosition
 	 */
-	public static void insertPlanePosition(DB_Item_PlanePosition position) {
+	public static void insertPlanePosition(DB_Item_PlanePosition planePosition) {
 
 		Connection con = null;
 
@@ -97,13 +97,13 @@ public class InsertDB {
 			System.out.println("DB接続完了");
 
 			PositionDAO InsPosition =new PositionDAO(con);
-			InsPosition.insertPosition(position);
+			InsPosition.insertPosition(planePosition);
 
 			System.out.println("*** 以下の内容を登録しました ***");
-			System.out.println(	position.getModeSAddress() + ", "
-								+ position.getPlanePosition().getLon() + ", "
-								+ position.getPlanePosition().getLat() + ", "
-								+ position.getPlanePosition().getAlt());
+			System.out.println(	planePosition.getModeSAddress() + ", "
+								+ planePosition.getPlanePosition().getLon() + ", "
+								+ planePosition.getPlanePosition().getLat() + ", "
+								+ planePosition.getPlanePosition().getAlt());
 
 		}catch (SQLException e) {
 			System.out.println("登録に失敗しました");
