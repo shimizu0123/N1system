@@ -14,9 +14,9 @@ public class DB_Item_Generator {
 		DB_Item_CallSign db_Item_CallSign = new DB_Item_CallSign(modeS, callSign);
 
 //		//DBにCallsignを格納
-//		InsertDB.InsertCallSign(db_Item_CallSign);
+		InsertDB.InsertCallSign(db_Item_CallSign);
 
-		System.out.println(db_Item_CallSign.toString());
+//		System.out.println(db_Item_CallSign.toString());
 
 	}
 
@@ -29,9 +29,9 @@ public class DB_Item_Generator {
 		DB_Item_Velocity db_Item_Velocity = new DB_Item_Velocity(modeS, velocity);
 
 //		//DBにVelocityを格納
-//		InsertDB.insertVelocity(db_Item_Velocity);
+		InsertDB.insertVelocity(db_Item_Velocity);
 
-		System.out.println(db_Item_Velocity.toString());
+//		System.out.println(db_Item_Velocity.toString());
 
 	}
 
@@ -44,9 +44,9 @@ public class DB_Item_Generator {
 		DB_Item_PlanePosition db_Item_PlanePosition = new DB_Item_PlanePosition(modeS, planePosition);
 
 //		//DBにPlanePositionを格納
-//		InsertDB.insertPlanePosition(db_Item_PlanePosition);
+		InsertDB.insertPlanePosition(db_Item_PlanePosition);
 
-		System.out.println(db_Item_PlanePosition.toString());
+//		System.out.println(db_Item_PlanePosition.toString());
 
 	}
 
