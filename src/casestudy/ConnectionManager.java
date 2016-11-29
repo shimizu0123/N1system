@@ -9,13 +9,13 @@ import java.sql.SQLException;
 public class ConnectionManager {
 
 	/** データベース接続URL */
-	private static final String URL = "jdbc:oracle:thin:@DB01:1521:ascdb";
+	private static final String URL = "jdbc:oracle:thin:@DB00:1521:ascdb";
 
 	/** ユーザー名 */
-	private static final String USER = "asct02";
+	private static final String USER = "asc45th";
 
 	/** パスワード */
-	private static final String PASSWORD = "asc_t02";
+	private static final String PASSWORD = "system";
 
 	/**
 	 * データベースの接続を取得する。
