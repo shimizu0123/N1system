@@ -16,7 +16,7 @@ public class PlanePositionFactoryTest {
 		public void テストデータ11行目と32行目からPlanePosition作成テスト() {
 			double actual ;
 			double expected = 36.077286856515066;
-			PlanePosition sut;
+			PlanePosition2 sut;
 
 			rawDataToPlanePosition(TestDataRead.fileReadLineBinary(11));
 			sut = rawDataToPlanePosition(TestDataRead.fileReadLineBinary(32));
@@ -37,7 +37,7 @@ public class PlanePositionFactoryTest {
 		public void テストデータ32行目と61行目からPlanePosition作成テスト() {
 			double actual ;
 			double expected = 34.24406433105469;
-			PlanePosition sut;
+			PlanePosition2 sut;
 
 			rawDataToPlanePosition(TestDataRead.fileReadLineBinary(32));
 			sut = rawDataToPlanePosition(TestDataRead.fileReadLineBinary(61));

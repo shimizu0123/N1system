@@ -8,7 +8,7 @@ import java.util.Collections;
 /**
  * PlanePosition型のデータを作るためのファクトリーメソッド
  * @see casestudy.LatLonAltAnalyzer
- * @see casestudy.PlanePosition
+ * @see casestudy.PlanePosition2
  */
 public class PlanePositionFactory {
 
@@ -26,7 +26,7 @@ public class PlanePositionFactory {
 	 * @param rawData SBS-3受信データ(バイナリ形式)
 	 * @return PlanePosition(緯度経度高度)
 	 */
-	public static PlanePosition rawDataToPlanePosition(String rawData){
+	public static PlanePosition2 rawDataToPlanePosition(String rawData){
 		ArrayList<Data>addDataList;
 		ArrayList<Data>pairDataList;
 
@@ -96,10 +96,10 @@ public class PlanePositionFactory {
 	 * rawDataがEvenならOddList。OddならEvenList
 	 * @return PlanePositon 航空機の緯度経度高度情報
 	 */
-	public static PlanePosition planePositonCreator(String rawData,ArrayList<Data> pairDataList) {
+	public static PlanePosition2 planePositonCreator(String rawData,ArrayList<Data> pairDataList) {
 
 		String listData;
-		PlanePosition planePosition = null;
+		PlanePosition2 planePosition = null;
 
 		//リストを参照　モードSアドレスが同じ　かつ　Timeビットが同じ　→　計算可能
 		for(Data pairData : pairDataList){

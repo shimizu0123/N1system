@@ -9,14 +9,14 @@ public class DB_Item_PlanePosition {
 
 	private long timeStamp_;
 	private String modeSAddress_;
-	private PlanePosition planePosition_;
+	private PlanePosition2 planePosition_;
 
 	/**
 	 * コンストラクタ
 	 * @param modeSAddress
 	 * @param planePosition
 	 */
-	DB_Item_PlanePosition(String modeSAddress, PlanePosition planePosition){
+	DB_Item_PlanePosition(String modeSAddress, PlanePosition2 planePosition){
 		this.timeStamp_ = System.currentTimeMillis();
 		this.modeSAddress_ = modeSAddress;
 		this.planePosition_ = planePosition;
@@ -42,7 +42,7 @@ public class DB_Item_PlanePosition {
 	 * 位置情報のgetter
 	 * @return 位置情報（PlanePositionオブジェクト）
 	 */
-	public PlanePosition getPlanePosition() {
+	public PlanePosition2 getPlanePosition() {
 		return planePosition_;
 	}
 

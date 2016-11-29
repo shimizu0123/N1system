@@ -32,7 +32,7 @@ public class EvenAndOddMatcher {
 		if(hexRawDataCheck(hexRawData)){
 
 			String binaryRawData = HexToBinary.hexToBinary(hexRawData);
-			PlanePosition planePosition = null;
+			PlanePosition2 planePosition = null;
 
 			//受信データのパリティチェック
 			if(parityCheck(binaryRawData)){
