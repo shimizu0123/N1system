@@ -38,7 +38,7 @@
 
 
 
-			<form action="/connection/ConnectionOrDie" method="post" >
+			<form action="/N1system/ConnectionOrDie" method="post" >
 				DBに格納する？<br>
 				はい<input type="radio" name="inYesOrNo" value="1">
 				いいえ<input type="radio" name="inYesOrNo" value="0"><br><br>

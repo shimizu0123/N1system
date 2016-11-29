@@ -1,30 +1,26 @@
 package casestudy;
 
+
 import java.text.SimpleDateFormat;
 
 /**
- * 自作クラス タイムスタンプ、ModeSアドレス、コールサインをもつ
+ * 自作クラス タイムスタンプ、ModeSアドレス、位置情報（PlanePosiionオブジェクト）をもつ
  */
-public class DB_Item_CallSign {
+public class DB_Item_PlanePosition {
 
-	/** タイムスタンプ */
 	private long timeStamp_;
-
-	/** ModeSアドレス */
 	private String modeSAddress_;
-
-	/** コールサイン */
-	private String callSign_;
+	private PlanePosition planePosition_;
 
 	/**
 	 * コンストラクタ
 	 * @param modeSAddress
-	 * @param callSign
+	 * @param planePosition
 	 */
-	DB_Item_CallSign(String modeSAddress, String callSign){
+	DB_Item_PlanePosition(String modeSAddress, PlanePosition planePosition){
 		this.timeStamp_ = System.currentTimeMillis();
 		this.modeSAddress_ = modeSAddress;
-		this.callSign_ = callSign;
+		this.planePosition_ = planePosition;
 	}
 
 	/**
@@ -44,18 +40,18 @@ public class DB_Item_CallSign {
 	}
 
 	/**
-	 * コールサインのgetter
-	 * @return コールサイン
+	 * 位置情報のgetter
+	 * @return 位置情報（PlanePositionオブジェクト）
 	 */
-	public String getCallSign() {
-		return callSign_;
+	public PlanePosition getPlanePosition() {
+		return planePosition_;
 	}
 
 
 	@Override
 	public String toString(){
         SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss:SSS");
-		return ("CallSign," + sdf.format(timeStamp_) + "," + modeSAddress_ + "," + callSign_);
+		return ("PlanePosition," + sdf.format(timeStamp_) + "," + modeSAddress_ + "," + planePosition_.toString());
 	}
 
 }

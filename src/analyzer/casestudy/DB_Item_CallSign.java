@@ -1,25 +1,31 @@
 package casestudy;
 
+
 import java.text.SimpleDateFormat;
 
 /**
- * 自作クラス タイムスタンプ、ModeSアドレス、速度情報（Velocityオブジェクト）をもつ
+ * 自作クラス タイムスタンプ、ModeSアドレス、コールサインをもつ
  */
-public class DB_Item_Velocity {
+public class DB_Item_CallSign {
 
+	/** タイムスタンプ */
 	private long timeStamp_;
+
+	/** ModeSアドレス */
 	private String modeSAddress_;
-	private Velocity velocity_;
+
+	/** コールサイン */
+	private String callSign_;
 
 	/**
 	 * コンストラクタ
 	 * @param modeSAddress
-	 * @param velocity
+	 * @param callSign
 	 */
-	DB_Item_Velocity(String modeSAddress, Velocity velocity){
+	DB_Item_CallSign(String modeSAddress, String callSign){
 		this.timeStamp_ = System.currentTimeMillis();
 		this.modeSAddress_ = modeSAddress;
-		this.velocity_ = velocity;
+		this.callSign_ = callSign;
 	}
 
 	/**
@@ -39,18 +45,18 @@ public class DB_Item_Velocity {
 	}
 
 	/**
-	 * 速度情報のgetter
-	 * @return 速度情報（Velocityオブジェクト）
+	 * コールサインのgetter
+	 * @return コールサイン
 	 */
-	public Velocity getVelocity() {
-		return velocity_;
+	public String getCallSign() {
+		return callSign_;
 	}
 
 
 	@Override
 	public String toString(){
         SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss:SSS");
-		return ("Velocity," + sdf.format(timeStamp_) + "," + modeSAddress_ + "," + velocity_.toString());
+		return ("CallSign," + sdf.format(timeStamp_) + "," + modeSAddress_ + "," + callSign_);
 	}
 
 }

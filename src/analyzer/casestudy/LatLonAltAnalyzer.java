@@ -1,5 +1,6 @@
 package casestudy;
 
+
 import static java.lang.Math.*;
 
 /**

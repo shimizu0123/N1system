@@ -1,5 +1,6 @@
 package casestudy;
 
+
 /**
  * SBS-3受信データ(バイナリ形式)からCallSignをString型のデータで変換するクラス
  */

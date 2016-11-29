@@ -1,25 +1,26 @@
 package casestudy;
 
+
 import java.text.SimpleDateFormat;
 
 /**
- * 自作クラス タイムスタンプ、ModeSアドレス、位置情報（PlanePosiionオブジェクト）をもつ
+ * 自作クラス タイムスタンプ、ModeSアドレス、速度情報（Velocityオブジェクト）をもつ
  */
-public class DB_Item_PlanePosition {
+public class DB_Item_Velocity {
 
 	private long timeStamp_;
 	private String modeSAddress_;
-	private PlanePosition planePosition_;
+	private Velocity velocity_;
 
 	/**
 	 * コンストラクタ
 	 * @param modeSAddress
-	 * @param planePosition
+	 * @param velocity
 	 */
-	DB_Item_PlanePosition(String modeSAddress, PlanePosition planePosition){
+	DB_Item_Velocity(String modeSAddress, Velocity velocity){
 		this.timeStamp_ = System.currentTimeMillis();
 		this.modeSAddress_ = modeSAddress;
-		this.planePosition_ = planePosition;
+		this.velocity_ = velocity;
 	}
 
 	/**
@@ -39,18 +40,18 @@ public class DB_Item_PlanePosition {
 	}
 
 	/**
-	 * 位置情報のgetter
-	 * @return 位置情報（PlanePositionオブジェクト）
+	 * 速度情報のgetter
+	 * @return 速度情報（Velocityオブジェクト）
 	 */
-	public PlanePosition getPlanePosition() {
-		return planePosition_;
+	public Velocity getVelocity() {
+		return velocity_;
 	}
 
 
 	@Override
 	public String toString(){
         SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss:SSS");
-		return ("PlanePosition," + sdf.format(timeStamp_) + "," + modeSAddress_ + "," + planePosition_.toString());
+		return ("Velocity," + sdf.format(timeStamp_) + "," + modeSAddress_ + "," + velocity_.toString());
 	}
 
 }

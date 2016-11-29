@@ -1,5 +1,6 @@
 package casestudy;
 
+
 /**
  * 自作クラス 速度情報をもつ
  */

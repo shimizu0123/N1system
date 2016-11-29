@@ -1,5 +1,6 @@
 package casestudy;
 
+
 import static casestudy.LatLonAltAnalyzer.*;
 
 import java.util.ArrayList;

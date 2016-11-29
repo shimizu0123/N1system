@@ -1,4 +1,5 @@
 package casestudy;
+
 /**
  * SBS-3受信データ(バイナリ形式)からVelocity型のデータを作るクラス
  * Velocity型は、水平方向の速度・方位と垂直方向の速度・向きからなるデータ

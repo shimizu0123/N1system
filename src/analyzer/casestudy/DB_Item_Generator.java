@@ -1,5 +1,6 @@
 package casestudy;
 
+
 /**
  * DB_Itemを作成するクラス
  */
