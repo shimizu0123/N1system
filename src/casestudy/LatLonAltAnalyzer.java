@@ -196,7 +196,7 @@ public class LatLonAltAnalyzer {
 	 * @param evenNewThanOdd EvenがOddよりタイムスタンプが新しい場合、true、それ以外はfalse
 	 * @return PlanePosition 緯度経度高度を格納したオブジェクト
 	 */
-	public static PlanePosition2 calc_Position(String dataE, String dataO, boolean evenNewThanOdd){
+	public static PlanePosition calc_Position(String dataE, String dataO, boolean evenNewThanOdd){
 		double lat = calcLat(dataE, dataO, evenNewThanOdd);
 
 		//チェック NL(Lat_E)とNL(Lat_O)を比べる 同様の値にならない時、計算を中止する
@@ -205,7 +205,7 @@ public class LatLonAltAnalyzer {
 		double lon = calcLon(dataE, dataO, evenNewThanOdd);
 		int alt = calcAlt(dataE, dataO, evenNewThanOdd);
 
-		return  new PlanePosition2(lat, lon, alt);
+		return  new PlanePosition(lat, lon, alt);
 	}
 
 }

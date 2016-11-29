@@ -3,7 +3,7 @@ package casestudy;
 /**
  * 自作クラス 位置情報をもつ
  */
-public class PlanePosition2 {
+public class PlanePosition {
 
 	/** 緯度 */
 	private double lat_;
@@ -20,7 +20,7 @@ public class PlanePosition2 {
 	 * @param lon
 	 * @param alt
 	 */
-	PlanePosition2(double lat, double lon, double alt){
+	PlanePosition(double lat, double lon, double alt){
 		this.lat_ = lat;
 		this.lon_ = lon;
 		this.alt_ = alt;
