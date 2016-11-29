@@ -16,6 +16,6 @@
 	<classpathentry kind="src" path="tst"/>
 	<classpathentry kind="lib" path="C:/eclipse_pleiades/eclipse/plugins/org.junit_4.8.1.v4_8_1_v20100427-1100/junit.jar"/>
 	<classpathentry kind="lib" path="C:/pleiades/eclipse/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
-	<classpathentry kind="lib" path="C:/pleiades/tomcat/6/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="C:/pleiades_mars/tomcat/8/lib/ojdbc6.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
