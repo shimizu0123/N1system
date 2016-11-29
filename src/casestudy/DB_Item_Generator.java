@@ -40,7 +40,7 @@ public class DB_Item_Generator {
 	 * @param modeS ModeSアドレス
 	 * @param planePosition 位置情報（PlanePositionオブジェクト）
 	 */
-	public static void dB_Item_Generate(String modeS, PlanePosition2 planePosition){
+	public static void dB_Item_Generate(String modeS, PlanePosition planePosition){
 		DB_Item_PlanePosition db_Item_PlanePosition = new DB_Item_PlanePosition(modeS, planePosition);
 
 //		//DBにPlanePositionを格納
