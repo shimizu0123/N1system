@@ -19,13 +19,15 @@ import org.w3c.dom.Element;
 
 public class AircraftSerch  extends Thread {
 
+	public boolean dox=true;
+
 	public void run(){
 		Connection con = null;
 		Velocity2[] velo = null;
 		Position[] posi = null;
 		Callsign[] call = null;
-		int j=0;
-		while(j!=1000){
+
+		while(dox){
 			try{
 				con = ConnectionManager.getConnection();
 				System.out.println("接続完了");
@@ -122,7 +124,7 @@ public class AircraftSerch  extends Thread {
 				          i=0;
 				          k=0;
 
-				          j++;
+
 
 				}
 			}catch(SQLException | InterruptedException e){
