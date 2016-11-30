@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE configuration>
+<markers>
+<marker modesaddress='851bdc'  callsign='JAL2466_' latitude='35.41008' longitude='137.810695'
+ altitude='9200' h_velocity='697.2072862' v_velocity='null' h_direction='30' v_direction='null'/>
+ <marker modesaddress='324fdc'  callsign='UNK5678_' latitude='35.91308' longitude='139.840695'
+ altitude='1300' h_velocity='657.2072862' v_velocity='null' h_direction='180' v_direction='null'/>
+  <marker modesaddress='543amw'  callsign='KNT4545_' latitude='35.01308' longitude='139.540695'
+ altitude='13300' h_velocity='657.2072862' v_velocity='null' h_direction='60' v_direction='null'/>
+ <marker modesaddress='543amw'  callsign='ANA776_' latitude='36.01308' longitude='136.540695'
+ altitude='33300' h_velocity='857.2072862' v_velocity='null' h_direction='50' v_direction='null'/>
+</markers>
