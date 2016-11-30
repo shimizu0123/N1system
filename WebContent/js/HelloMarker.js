@@ -1,4 +1,12 @@
-/* HelloMarkerのコンストラクタ。緯度、軽度をメンバ変数に設定する。 */
+/**
+ * HelloMarkerのコンストラクタ。緯度、軽度をメンバ変数に設定する。
+ * @param map		表示対象の地図
+ * @param lat		緯度
+ * @param lng		経度
+ * @param alt		高度
+ * @param velocity	水平面の速度
+ * @param callsign	コールサイン
+ */
 function HelloMarker(map, lat, lng ,alt,velocity,callsign) {
   this.lat_ = lat;
   this.lng_ = lng;
@@ -7,9 +15,13 @@ function HelloMarker(map, lat, lng ,alt,velocity,callsign) {
   this.callsign = callsign;
   this.setMap(map);
 }
+
 /** google.maps.OverlayViewを継承 */
 HelloMarker.prototype = new google.maps.OverlayView();
-/** drawの実装。div要素を生成 */
+
+/**
+ * drawの実装。div要素を生成
+ */
 HelloMarker.prototype.draw = function() {
   // 何度も呼ばれる可能性があるので、div_が未設定の場合のみ要素生成
   if (!this.div_) {
@@ -34,7 +46,10 @@ HelloMarker.prototype.draw = function() {
   this.div_.style.left = point.x +20+ 'px';
   this.div_.style.top = point.y -30+ 'px';
 }
-/* 削除処理の実装 */
+
+/**
+ *  削除処理の実装
+ */
 HelloMarker.prototype.remove = function() {
   if (this.div_) {
     this.div_.parentNode.removeChild(this.div_);

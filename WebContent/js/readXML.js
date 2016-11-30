@@ -1,8 +1,13 @@
+/**
+ * XMLファイルを読む
+ * XMLファイルの読み取りパスは変数filenameで変更可能
+ */
 function readXML(){
 
-    var filename = "./testdata.xml"; //ファイル名
-    filename += "?" + Math.random(); //乱数を付加
-	  downloadUrl(filename, function(data){
+	var filename = "./testdata.xml"; 			//ファイル名
+
+	filename += "?" + Math.random(); 			//乱数を付加
+	downloadUrl(filename, function(data){
 
 		var xmlDoc = xmlParse(data);
 		var markers = xmlDoc.getElementsByTagName("marker");
@@ -26,6 +31,6 @@ function readXML(){
 
 	}); //end of downloadUrl
 
-setTimeout(removeMarkers,500);
-setTimeout(readXML,500);
+	setTimeout(removeMarkers,500);
+	setTimeout(readXML,500);
 }
